@@ -50,7 +50,7 @@ a.	Request body:
 
 The application can be installed downloading this code to your system, navigate to the root directory, and run the following command.
 
-#### `yarn install`
+#### `yarn install` or `npm install`
 
 The above command installs all dependencies required to run the node.js application. 
 
@@ -67,5 +67,5 @@ https://webkul.com/blog/advanced-rest-clientapi-testing-tool/
 Once ARC opens, import the JSON file from endpoints folder in root (endpoints/arc-data-export-boomcar.json) to access the endpoints described above.
 
 #### Author:
-Athif J --- athifbijli@gmail.com
+Athif J --- athifbijli@gmail.com <br />
 GitHub and Skype: athifjey
