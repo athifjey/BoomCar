@@ -2,7 +2,7 @@
 
 This is a Node.js application that exposes endpoints for a Rental Car booking application.
 
-This model application is built with Node.js + Express.js, with files being stored as JSON, and the application is CORS enabled.
+This model application is built with Node.js + Express.js, with files being stored as JSON, and the application is CORS enabled. The services are built with Microservices approach. 
 
 The following operations can be performed with the endpoints exposed by BoomCar application
 
