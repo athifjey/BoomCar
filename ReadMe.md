@@ -14,7 +14,7 @@ The following operations can be performed with the endpoints exposed by BoomCar 
 5.	Lists the details of a particular car
 6.	Allows to add/edit/update cars availability
 
-The following are the end points and they are also available as ARC endpoint JSON file iat the following location (endpoints/arc-data-export-boomcar.json)
+The following are the end points and they are also available as ARC endpoint JSON file in the following location (endpoints/arc-data-export-boomcar.json)
 
 ### Available endpoints:
 1.	/cars – GET method - List all users and their cars with availability date and time
