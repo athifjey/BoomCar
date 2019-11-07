@@ -2,6 +2,7 @@ const express = require('express');
 var fs = require('fs');
 const morgan = require('morgan');
 var Sequelize = require('sequelize');
+const env = require('./config/env.json')
 
 const migrate = express();
 
@@ -26,10 +27,10 @@ function processFile() {
 
 fetchData();
 
-var sequelize = new Sequelize('test', 'root', '', {
-    host: '127.0.0.1',
-    port: 3306,
-    dialect: 'mysql'
+var sequelize = new Sequelize(env.dbconn.database, env.dbconn.username, env.dbconn.password, {
+    host: env.dbconn.host,
+    port: env.dbconn.port,
+    dialect: env.dbconn.dialect
 });
 
 // Checking connection status
@@ -88,6 +89,7 @@ var Cars = sequelize.define('cars', {
 }, {
         freezeTableName: true,
     });
+
 //Applying Item Table to database
 Cars.sync({ force: true }).then(function () {
     // Table created
